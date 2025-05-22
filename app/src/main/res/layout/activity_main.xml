@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    android:background="#F9F9F9"
+    android:background="#E0F6E1"
     tools:context=".MainActivity"
     android:id="@+id/main">
 
@@ -28,24 +28,25 @@
         android:layout_margin="24dp">
 
         <Button
-            android:id="@+id/btnPlastic"
+            android:id="@+id/btn_trip"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:backgroundTint="#FFFFFF"
             android:drawablePadding="16dp"
             android:gravity="center_vertical|start"
+            android:onClick="onclick"
             android:padding="16dp"
             android:text="TRIP"
             android:textColor="#00CFCF"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_map"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnOrganics"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/btnOrganics"
+            android:id="@+id/btn_map"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:backgroundTint="#FFFFFF"
@@ -57,13 +58,13 @@
             android:drawablePadding="16dp"
             android:padding="16dp"
             android:gravity="center_vertical|start"
-            app:layout_constraintTop_toBottomOf="@id/btnPlastic"
+            app:layout_constraintTop_toBottomOf="@id/btn_trip"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnPaper"/>
+            app:layout_constraintBottom_toTopOf="@id/btn_achievement"/>
 
         <Button
-            android:id="@+id/btnPaper"
+            android:id="@+id/btn_achievement"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:backgroundTint="#FFFFFF"
@@ -75,13 +76,13 @@
             android:drawablePadding="16dp"
             android:padding="16dp"
             android:gravity="center_vertical|start"
-            app:layout_constraintTop_toBottomOf="@id/btnOrganics"
+            app:layout_constraintTop_toBottomOf="@id/btn_map"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnGlass"/>
+            app:layout_constraintBottom_toTopOf="@id/btn_settings"/>
 
         <Button
-            android:id="@+id/btnGlass"
+            android:id="@+id/btn_settings"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:backgroundTint="#FFFFFF"
@@ -93,7 +94,7 @@
             android:textColor="#00CFCF"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/btnPaper"
+            app:layout_constraintTop_toBottomOf="@id/btn_achievement"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>

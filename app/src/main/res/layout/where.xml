@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F9F9F9"
+    android:id="@+id/trip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="도시 선택"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#00CFCF"
+        android:gravity="center"
+        android:layout_marginVertical="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 각 버튼이 화면의 약 1/10 크기 -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="서울"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="부산"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="대구"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="인천"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="광주"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="대전"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="울산"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="수원"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="창원"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="성남"
+                android:textSize="18sp"
+                android:textColor="#00CFCF"
+                android:backgroundTint="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- 추가 도시들 -->
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="고양" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="용인" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="청주" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="전주" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="제주" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="포항" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="진주" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="안산" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+            <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="남양주" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
