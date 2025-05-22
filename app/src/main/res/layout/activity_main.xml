@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:background="#F9F9F9"
     tools:context=".MainActivity"
     android:id="@+id/main">
@@ -31,7 +32,6 @@
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:backgroundTint="#FFFFFF"
-
             android:drawablePadding="16dp"
             android:gravity="center_vertical|start"
             android:padding="16dp"
