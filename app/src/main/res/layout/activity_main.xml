@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9F9F9"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textColor="#00CFCF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="32dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/categoryLayout"
+        android:layout_below="@id/tvTitle"
+        android:layout_above="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="24dp">
+
+        <Button
+            android:id="@+id/btnPlastic"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:backgroundTint="#FFFFFF"
+
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical|start"
+            android:padding="16dp"
+            android:text="TRIP"
+            android:textColor="#00CFCF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnOrganics"/>
+
+        <Button
+            android:id="@+id/btnOrganics"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="MAP"
+            android:textColor="#00CFCF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:drawablePadding="16dp"
+            android:padding="16dp"
+            android:gravity="center_vertical|start"
+            app:layout_constraintTop_toBottomOf="@id/btnPlastic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnPaper"/>
+
+        <Button
+            android:id="@+id/btnPaper"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="ACHIEVEMENT"
+            android:textColor="#00CFCF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:drawablePadding="16dp"
+            android:padding="16dp"
+            android:gravity="center_vertical|start"
+            app:layout_constraintTop_toBottomOf="@id/btnOrganics"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnGlass"/>
+
+        <Button
+            android:id="@+id/btnGlass"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:backgroundTint="#FFFFFF"
+
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical|start"
+            android:padding="16dp"
+            android:text="SETTINGS"
+            android:textColor="#00CFCF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btnPaper"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:weightSum="5"
+        android:elevation="8dp"/>
+</RelativeLayout>
