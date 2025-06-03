@@ -27,7 +27,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- 각 버튼이 화면의 약 1/10 크기 -->
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -128,7 +128,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="12dp"/>
 
-            <!-- 추가 도시들 -->
+
             <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="고양" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
             <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="용인" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>
             <Button android:layout_width="match_parent" android:layout_height="80dp" android:text="청주" android:textColor="#00CFCF" android:textSize="18sp" android:textStyle="bold" android:backgroundTint="#FFFFFF" android:layout_marginBottom="12dp"/>

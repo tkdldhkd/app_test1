@@ -50,36 +50,39 @@
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:backgroundTint="#C5F2B2"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical|start"
+            android:onClick="onclick"
+            android:padding="16dp"
+
             android:text="MAP"
             android:textColor="#00CFCF"
             android:textSize="18sp"
             android:textStyle="bold"
-
-            android:drawablePadding="16dp"
-            android:padding="16dp"
-            android:gravity="center_vertical|start"
-            app:layout_constraintTop_toBottomOf="@id/btn_trip"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_achievement"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btn_achievement"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_trip" />
 
         <Button
             android:id="@+id/btn_achievement"
             android:layout_width="0dp"
             android:layout_height="72dp"
             android:backgroundTint="#C5F2B2"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical|start"
+            android:onClick="onclick"
+            android:padding="16dp"
+
             android:text="ACHIEVEMENT"
             android:textColor="#00CFCF"
             android:textSize="18sp"
             android:textStyle="bold"
-
-            android:drawablePadding="16dp"
-            android:padding="16dp"
-            android:gravity="center_vertical|start"
-            app:layout_constraintTop_toBottomOf="@id/btn_map"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_settings"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btn_settings"/>
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_map" />
 
         <Button
             android:id="@+id/btn_settings"
@@ -89,24 +92,34 @@
 
             android:drawablePadding="16dp"
             android:gravity="center_vertical|start"
+            android:onClick="onclick"
             android:padding="16dp"
             android:text="SETTINGS"
             android:textColor="#00CFCF"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/btn_achievement"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_achievement" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="8dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <LinearLayout
         android:id="@+id/bottomNav"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:orientation="horizontal"
         android:background="#FFFFFF"
-        android:weightSum="5"
-        android:elevation="8dp"/>
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:weightSum="5" />
 </RelativeLayout>
