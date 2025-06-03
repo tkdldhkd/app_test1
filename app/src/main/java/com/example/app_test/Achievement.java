@@ -33,6 +33,7 @@ public class Achievement extends AppCompatActivity {
         allAchievementsList.add(new Achievements_list(System.currentTimeMillis(), "레벨 업!", "레벨이 올랐습니다!", "서울"));
         allAchievementsList.add(new Achievements_list(System.currentTimeMillis(), "관광 완료!", "제주도 여행을 마쳤습니다!", "제주"));
         allAchievementsList.add(new Achievements_list(System.currentTimeMillis(), "대구 입성!", "대구에 왔습니다!", "대구"));
+        allAchievementsList.add(new Achievements_list(System.currentTimeMillis(), "대구 입성2!", "대구에 왔습니다!", "대구"));
 
         filteredAchievementsList = new ArrayList<>();
         for (Achievements_list achievement : allAchievementsList) {
